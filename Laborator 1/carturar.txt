@@ -1,9 +1,0 @@
-carte1 256 2002
-carte1 300 1900
-carte3 100 2012
-carte4 255 2003
-carte5 234 2001
-carte6 678 1999
-carte7 432 1800
-carte8 198 2500
-carte9 362 1500
