@@ -23,19 +23,19 @@ int main()
     
         switch(option)
         {
-            case CREATE_ARRAY:
+            case INIT_ARRAY:
                 printf("Introdu numarul de elemente din array:\n");
                 scanf("%llu",&nr_of_elem);
                 array = create_array_with_random_values(nr_of_elem);
             break;
 
-            case 2:
+            case PRINT_ARRAY:
                 printf("Tabloul este:\n");
                 print_array(array,nr_of_elem);
                 printf("\n");
             break;
 
-            case 3:
+            case SORT_FAST:
                 printf("Tabloul sortat cu quick sort\n");
                 time1 = clock();
                     quick_sort(array,0,nr_of_elem - 1);
@@ -46,7 +46,7 @@ int main()
                 printf("\nTimpul de exeutie este %lf\n",time_ms);
             break;
 
-            case 4:
+            case SORT_SLOW:
                 printf("Tabloul sortat cu selction sort\n");
                 time1 = clock();
                     selection_sort(array,nr_of_elem);
@@ -56,12 +56,12 @@ int main()
                 printf("\nTimpul de exeutie este %lf\n",time_ms);
             break;
 
-            case 5:
+            case FREE_ARRAY:
                 free(array);
                 array = NULL;
             break;
 
-            case 6:
+            case LINEAR_SEARCH:
                 printf("Introdu un numar de cautat\n");
                 scanf("%d",&valid_search);
                 time1 = clock();
@@ -79,7 +79,7 @@ int main()
 
             break;
 
-            case 7:
+            case BINARY_SEARCH:
                 printf("Introdu un numar de cautat\n");
                 scanf("%d",&valid_search);
                 time1 = clock();
@@ -95,7 +95,7 @@ int main()
                 printf("\nTimpul de exeutie este %lf\n",time_ms);
             break;
 
-            case 8:
+            case COMPUTE_FIBONACI:
                 
                 strcpy(fib[0], "0");
                 strcpy(fib[1], "1");
@@ -116,7 +116,7 @@ int main()
                 printf("\nTimpul de exeutie este %lf\n",time_ms);
             break;
 
-            case 0:
+            case EXIT:
                 exit(0);
             break;
 

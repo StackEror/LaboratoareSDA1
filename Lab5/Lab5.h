@@ -4,8 +4,8 @@
 #include <limits.h>
 #include <string.h>
 
-enum options {CREATE_ARRAY = 1,PRINT_ARRAY = 2,SORT_FAST = 3,SORT_SLOW = 4,
-                FREE_ARRAY = 5,LINEAR_SEARCH = 6,BINARY_SEARCH = 7,FIBONACI = 8,EXIT = 0};
+enum options {INIT_ARRAY = 1,PRINT_ARRAY = 2,SORT_FAST = 3,SORT_SLOW = 4,
+                FREE_ARRAY = 5,LINEAR_SEARCH = 6,BINARY_SEARCH = 7,COMPUTE_FIBONACI = 8,EXIT = 0};
                 
 typedef unsigned long long ull;
 ull * create_array_with_random_values(ull nr_of_elem);
